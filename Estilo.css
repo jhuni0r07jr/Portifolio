@@ -251,8 +251,23 @@ main{
     background: yellow;
 }
 
+.frente a{
+    top: 175px;
+    left: 135px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
 
 /*                  MUSEO                  */
+
+.frente1 a{
+    top: 175px;
+    left: 85px;
+    color: black;
+    position: absolute;
+    text-decoration: none;
+}
 
 .tras1 p{
     width: 100%;
