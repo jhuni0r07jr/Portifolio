@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: open_sans;
+}
+
+@font-face{
+    font-family: open_sans;
+    src: url(Font_da_pagina/technasans-regular-webfont.woff);
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background: #262318;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 10%;
+    height: 100%;
+}
+
+nav ul{
+    width: 35%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    align-items: baseline;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li{
+    margin-left: 5px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+nav a{
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 90%;
+    font-weight: bolder;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #262318, #190d18, #17022e);
+}
+
+#caixa1{
+    width: 100%;
+    height: 90%;/*    height: 530px;*/
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 568px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, #262318, #110018, #17022e);
+}
+
+#caixa1 p{
+    width: 100%;
+    color: white;
+    font-size: 110%;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+}
+
+#Sobre_mim{
+    width: 35%;
+    height: 30%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+    color:aliceblue;
+    align-items: center;
+    text-align: center;
+}
+
+#Sobre_mim p{
+    color: #bac700;
+    margin-bottom: 20px;
+}
+
+#Eu_mesmo{
+    width: 15%;
+    height: 50%;/*    height: 65%;*/
+    margin-top: 5%;
+    min-width: 320px;
+}
+
+#Icones{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#Icones button{
+    width: 80px;
+    height: 25px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 20px;
+    background: #87CEFA;
+}
+
+#Icones a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: black;
+    font-size:larger;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#caixa2{
+    width: 100%;
+    display: flex;
+    height: 640px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background: #17022e;
+    justify-content: center;
+}
+
+#caixa2 h2{
+    height: 4%;
+    width: 100%;
+    color: #bac700;
+    margin-top: -180px;
+    text-align: center;
+}
+
+.Conteiner, .Conteiner2{
+    width: 20%;
+    height: 30%;
+    min-width: 320px;
+    margin-left: 25px;
+    margin-top: -250px;
+    position: relative;
+    align-items: center;
+}
+
+.Conteiner:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.Conteiner2:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.frente, .tras, .frente1, .tras1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 10px #ffffff8e;
+}
+
+.frente1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Imagens/Projeto_Museo.png);
+}
+
+.frente{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Imagens/Game_Descobrir_numero.png);
+}
+
+.tras, .tras1{
+    display: flex;
+    color: black;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    background: #1b3448;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.tras p{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tras a{
+    width: 20%;
+    height: 10%;
+    transition: 1s;
+    border-top: 1px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.tras a:hover{
+    background: yellow;
+}
+
+
+/*                  MUSEO                  */
+
+.tras1 p{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tras1 a{
+    width: 20%;
+    height: 10%;
+    border-top: 1px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.tras1 a:hover{
+    background: yellow;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+}
