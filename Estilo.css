@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+/*                      BARRA DE ROLAGEM      */
+::-webkit-scrollbar{
+    width: 5px;
+    background-image: linear-gradient(180deg, #262318, #190d18, #17022e);
+}
+                        
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+/*                      FIM DA BARRA DE ROLAGEM      */
+
 html{
     scroll-behavior: smooth;
 }
@@ -11,17 +24,17 @@ body{
     width: 100%;
     height: 100%;
     color: white;
-    font-family: open_sans;
+    font-family: Poppins, sans-serif;
 }
 
-@font-face{
+/*@font-face{
     font-family: open_sans;
     src: url(Font_da_pagina/technasans-regular-webfont.woff);
-}
+}*/
 
 header{
     width: 100%;
-    height: 10%;
+    height: 50px;
     background: #262318;
 }
 
@@ -35,7 +48,7 @@ nav{
 }
 
 nav img{
-    width: 10%;
+    width: 5%;
     height: 100%;
 }
 
@@ -46,15 +59,15 @@ nav ul{
     display: flex;
     border-radius: 20px;
     align-items: baseline;
-    justify-content: center;
     list-style-type: none;
+    justify-content: center;
 }
 
 nav li{
-    margin-left: 5px;
-    align-items: center;
-    text-align: center;
     width: 100%;
+    margin-left: 5px;
+    text-align: center;
+    align-items: center;
 }
 
 nav a{
@@ -77,10 +90,9 @@ main{
 
 #caixa1{
     width: 100%;
-    height: 90%;/*    height: 530px;*/
+    height: 650px;
     display: flex;
     flex-wrap: wrap;
-    min-height: 568px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -90,17 +102,17 @@ main{
 #caixa1 p{
     width: 100%;
     color: white;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 900;
     text-align: center;
     align-items: center;
 }
 
 #Sobre_mim{
-    width: 35%;
-    height: 30%;
+    width: 30%;
+    height: 25%;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: -190px;
     margin-left: 10%;
     color:aliceblue;
     align-items: center;
@@ -114,14 +126,14 @@ main{
 
 #Eu_mesmo{
     width: 15%;
-    height: 50%;/*    height: 65%;*/
-    margin-top: 5%;
+    height: 50%;
     min-width: 320px;
+    margin-top: -70px;
 }
 
 #Icones{
     width: 100%;
-    margin-top: 10px;
+
 }
 
 #Icones button{
@@ -145,6 +157,7 @@ main{
     justify-content: center;
 }
 
+                                            /*           CAIXA 2           */
 #caixa2{
     width: 100%;
     display: flex;
@@ -157,28 +170,44 @@ main{
 }
 
 #caixa2 h2{
-    height: 4%;
     width: 100%;
     color: #bac700;
-    margin-top: -180px;
+    padding-left: 30px;
     text-align: center;
 }
 
-.Conteiner, .Conteiner2{
-    width: 20%;
-    height: 30%;
-    min-width: 320px;
-    margin-left: 25px;
-    margin-top: -250px;
+.principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Conteiner, .Conteiner2, .Conteiner3, .Conteiner4{
+    width: 25%;
+    height: 23%;
+    min-height: 90px;
+    min-width: 310px;
+    margin-left: 20px;
     position: relative;
     align-items: center;
+
 }
+
+/*    justify-content: space-around;*/
 
 .Conteiner:hover .flip{
     transform: rotateY(180deg);
 }
 
 .Conteiner2:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.Conteiner3:hover .flip{
     transform: rotateY(180deg);
 }
 
@@ -191,7 +220,7 @@ main{
     transform-style: preserve-3d;
 }
 
-.frente, .tras, .frente1, .tras1{
+.frente, .tras, .frente1, .tras1, .frente2, .tras2{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -200,11 +229,18 @@ main{
     box-shadow: 0px 0px 10px #ffffff8e;
 }
 
+.frente2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Imagens/IMC.png);
+}
+
 .frente1{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(Imagens/Projeto_Museo.png);
+    background-image: url(Imagens/IMC.png);
 }
 
 .frente{
@@ -214,9 +250,8 @@ main{
     background-image: url(Imagens/Game_Descobrir_numero.png);
 }
 
-.tras, .tras1{
+.tras, .tras1, .tras2{
     display: flex;
-    color: black;
     color: white;
     flex-wrap: wrap;
     align-items: center;
@@ -225,6 +260,34 @@ main{
     justify-content: center;
     transform: rotateY(180deg);
 }
+
+                                    /*  CONFIGURAÇÃO FRENTE  */
+.frente1 a{
+    top: 85%;
+    left: 35%;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.frente2 a{
+    top: 175px;
+    left: 85px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.frente a{
+    top: 85%;
+    left: 35%;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+                                    /*  CONFIGURAÇÃO ATRAS  */
+                                    /*  ATRAS GAME  */
 
 .tras p{
     width: 100%;
@@ -247,28 +310,7 @@ main{
     text-decoration: none;
 }
 
-.tras a:hover{
-    background: yellow;
-}
-
-.frente a{
-    top: 175px;
-    left: 135px;
-    color: white;
-    position: absolute;
-    text-decoration: none;
-}
-
-/*                  MUSEO                  */
-
-.frente1 a{
-    top: 175px;
-    left: 85px;
-    color: black;
-    position: absolute;
-    text-decoration: none;
-}
-
+                                    /*  ATRAS IMC  */
 .tras1 p{
     width: 100%;
     height: 90%;
@@ -290,8 +332,120 @@ main{
     transition: 1s;
 }
 
+                                    /*  ATRAS ??  */
+.tras2 p{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tras2 a{
+    width: 20%;
+    height: 10%;
+    border-top: 1px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+.tras a:hover{
+    background: yellow;
+}
+
 .tras1 a:hover{
     background: yellow;
+}
+
+.tras2 a:hover{
+    background: yellow;
+}
+
+/*                              QUEM SOU                              */
+#Quemsou{
+    width: 100%;
+    display: flex;
+    height: 350px;
+    font-weight: 400;
+    padding-top: 25px;
+    line-height: 1.3em;
+    justify-content: center;
+    align-items: center;
+    background: #17022e;
+    font-family: DM Sans, sans-serif;
+}
+
+#SobreMim{
+    width: 50%;
+    height: 50%;
+    font-size: 95%;
+    min-width: 310px;
+}
+
+#SobreMim h2{
+    width: 100%;
+}
+
+#SobreMim p{
+    width: 100%;
+    height: 90%;
+}
+
+                                        /*HABILIDADES*/
+#Habilidades{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    font-weight: 400;
+    padding-top: 25px;
+    line-height: 1.3em;
+    justify-content: center;
+    align-items: center;
+    background: #17022e;
+    font-family: DM Sans, sans-serif;
+}
+
+.carta{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-auto-rows: 50px;
+    gap: 1rem;
+}
+
+.HTML, .CSS, .JS, .Angular, .Git, .GitHub{
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.HTML{
+    background-image: url(Imagens/Html.png);
+}
+.CSS{
+    background-image: url(Imagens/Css.png);
+}
+
+.JS{
+    background-image: url(Imagens/Js.png);
+}
+
+.Angular{
+    background-image: url(Imagens/Angular.png);
+}
+.Git{
+    background-image: url(Imagens/Git.png);
+}
+
+.GitHub{
+    background-image: url(Imagens/GitHub.png);
 }
 
 footer{
