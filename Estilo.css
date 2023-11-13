@@ -24,13 +24,14 @@ body{
     width: 100%;
     height: 100%;
     color: white;
-    font-family: Poppins, sans-serif;
+    font-family: open_sans;
 }
 
-/*@font-face{
+@font-face{
     font-family: open_sans;
-    src: url(Font_da_pagina/technasans-regular-webfont.woff);
-}*/
+    font-size: 50px;
+    src: url(Font_da_pagina/Ubuntu-Italic.woff);
+}
 
 header{
     width: 100%;
@@ -211,6 +212,10 @@ main{
     transform: rotateY(180deg);
 }
 
+.Conteiner4:hover .flip{
+    transform: rotateY(180deg);
+}
+
 .flip{
     width: 100%;
     height: 100%;
@@ -220,27 +225,13 @@ main{
     transform-style: preserve-3d;
 }
 
-.frente, .tras, .frente1, .tras1, .frente2, .tras2{
+.frente, .tras, .frente2, .tras2, .frente3, .tras3, .frente4, .tras4{
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 20px;
     backface-visibility: hidden;
     box-shadow: 0px 0px 10px #ffffff8e;
-}
-
-.frente2{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(Imagens/IMC.png);
-}
-
-.frente1{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(Imagens/IMC.png);
 }
 
 .frente{
@@ -250,7 +241,28 @@ main{
     background-image: url(Imagens/Game_Descobrir_numero.png);
 }
 
-.tras, .tras1, .tras2{
+.frente2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Imagens/IMC.png);
+}
+
+.frente3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Imagens/Cronômetro.png);
+}
+
+.frente4{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Imagens/Consultar-CEP.png);
+}
+
+.tras, .tras2, .tras3, .tras4{
     display: flex;
     color: white;
     flex-wrap: wrap;
@@ -262,7 +274,23 @@ main{
 }
 
                                     /*  CONFIGURAÇÃO FRENTE  */
-.frente1 a{
+.frente a{
+    top: 85%;
+    left: 20%;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.frente2 a{
+    top: 85%;
+    left: 20%;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.frente3 a{
     top: 85%;
     left: 35%;
     color: white;
@@ -270,15 +298,7 @@ main{
     text-decoration: none;
 }
 
-.frente2 a{
-    top: 175px;
-    left: 85px;
-    color: white;
-    position: absolute;
-    text-decoration: none;
-}
-
-.frente a{
+.frente4 a{
     top: 85%;
     left: 35%;
     color: white;
@@ -311,28 +331,6 @@ main{
 }
 
                                     /*  ATRAS IMC  */
-.tras1 p{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.tras1 a{
-    width: 20%;
-    height: 10%;
-    border-top: 1px;
-    color: aliceblue;
-    text-align: center;
-    align-items: center;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 1s;
-}
-
-                                    /*  ATRAS ??  */
 .tras2 p{
     width: 100%;
     height: 90%;
@@ -354,16 +352,63 @@ main{
     transition: 1s;
 }
 
+                                    /*  ATRAS ??  */
+.tras3 p{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tras3 a{
+    width: 20%;
+    height: 10%;
+    border-top: 1px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.tras4 p{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tras4 a{
+    width: 20%;
+    height: 10%;
+    border-top: 1px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
 
 .tras a:hover{
     background: yellow;
 }
 
-.tras1 a:hover{
+.tras2 a:hover{
     background: yellow;
 }
 
-.tras2 a:hover{
+.tras3 a:hover{
+    background: yellow;
+}
+
+.tras4 a:hover{
     background: yellow;
 }
 
@@ -399,19 +444,21 @@ main{
 
                                         /*HABILIDADES*/
 #Habilidades{
+    border: 1px solid red;
     width: 100%;
     height: 350px;
     display: flex;
     font-weight: 400;
     padding-top: 25px;
     line-height: 1.3em;
-    justify-content: center;
     align-items: center;
     background: #17022e;
+    justify-content: center;
     font-family: DM Sans, sans-serif;
 }
 
 .carta{
+    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-auto-rows: 50px;
