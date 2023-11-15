@@ -25,6 +25,7 @@ body{
     height: 100%;
     color: white;
     font-family: open_sans;
+    cursor: url("imagens/Cursor.png"), auto;
 }
 
 @font-face{
@@ -113,28 +114,31 @@ main{
     width: 30%;
     height: 25%;
     font-size: 20px;
-    margin-top: -190px;
     margin-left: 10%;
     color:aliceblue;
-    align-items: center;
+    margin-top: -210px;
     text-align: center;
+    align-items: center;
 }
 
 #Sobre_mim p{
     color: #bac700;
-    margin-bottom: 20px;
 }
 
 #Eu_mesmo{
     width: 15%;
     height: 50%;
+    transition: 1s;
     min-width: 320px;
     margin-top: -70px;
 }
 
+#Eu_mesmo:hover{
+    scale: 1.2;
+}
+
 #Icones{
     width: 100%;
-
 }
 
 #Icones button{
@@ -305,10 +309,8 @@ main{
     position: absolute;
     text-decoration: none;
 }
-
                                     /*  CONFIGURAÇÃO ATRAS  */
                                     /*  ATRAS GAME  */
-
 .tras p{
     width: 100%;
     height: 90%;
@@ -386,15 +388,14 @@ main{
 .tras4 a{
     width: 20%;
     height: 10%;
+    transition: 1s;
     border-top: 1px;
     color: aliceblue;
     text-align: center;
     align-items: center;
     border-radius: 20px;
     text-decoration: none;
-    transition: 1s;
 }
-
 
 .tras a:hover{
     background: yellow;
@@ -420,9 +421,9 @@ main{
     font-weight: 400;
     padding-top: 25px;
     line-height: 1.3em;
-    justify-content: center;
     align-items: center;
     background: #17022e;
+    justify-content: center;
     font-family: DM Sans, sans-serif;
 }
 
@@ -444,38 +445,56 @@ main{
 
                                         /*HABILIDADES*/
 #Habilidades{
-    border: 1px solid red;
     width: 100%;
     height: 350px;
-    display: flex;
     font-weight: 400;
-    padding-top: 25px;
     line-height: 1.3em;
+    text-align: center;
     align-items: center;
     background: #17022e;
-    justify-content: center;
     font-family: DM Sans, sans-serif;
 }
 
+#Habilidades h2{
+    color: #bac700;
+}
+
 .carta{
-    border: 1px solid red;
+    gap: 2rem;
+    width: 40%;
+    height: 70%;
     display: grid;
-    grid-template-columns: repeat(3, 50px);
+    padding-top: 80px;
+    margin-left: 30%;
     grid-auto-rows: 50px;
-    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 55px);
 }
 
 .HTML, .CSS, .JS, .Angular, .Git, .GitHub{
-    width: 48px;
-    height: 48px;
+    scale: 1;
+    width: 65px;
+    height: 60px;
+    transition: 0.5s;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;   
+}
+
+
+.HTML:hover, .CSS:hover, .JS:hover, .Angular:hover, .Git:hover, .GitHub:hover{
+    scale: 1.2;
+}
+
+.HTML p, .CSS p, .JS p, .Angular p, .Git p, .GitHub p{
+    margin-top: 60px;
+    text-align: center;
 }
 
 .HTML{
     background-image: url(Imagens/Html.png);
 }
+
 .CSS{
     background-image: url(Imagens/Css.png);
 }
