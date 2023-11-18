@@ -29,8 +29,8 @@ body{
 }
 
 @font-face{
-    font-family: open_sans;
     font-size: 50px;
+    font-family: open_sans;
     src: url(Font_da_pagina/Ubuntu-Italic.woff);
 }
 
