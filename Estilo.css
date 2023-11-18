@@ -50,13 +50,14 @@ nav{
 }
 
 nav img{
-    width: 5%;
-    height: 100%;
+    width: 80px;/*10%*/
+    height: 80px; /*90%*/
 }
 
 nav ul{
-    width: 35%;
-    height: 20%;
+    border: 1px solid red;
+    width: 50%;
+    height: 40%;
     margin: auto;
     display: flex;
     border-radius: 20px;
