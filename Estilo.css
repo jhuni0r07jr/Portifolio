@@ -26,6 +26,7 @@ body{
     color: white;
     font-family: open_sans;
     cursor: url("./Imagens/Cursor.png"), auto;
+    cursor: url("Imagens/Cursor.png"), auto;
 }
 
 @font-face{
@@ -492,11 +493,11 @@ main{
 }
 
 .HTML{
-    background-image: url(./Imagens/Html.png);
+    background-image: url(Imagens/HTML.png);
 }
 
 .CSS{
-    background-image: url(./Imagens/Css.png);
+    background-image: url(Imagens/CSS.png);
 }
 
 .JS{
