@@ -148,7 +148,7 @@ main{
     border: none;
     margin-top: 5px;
     border-radius: 20px;
-    background: #87CEFA;
+    animation: colorido 2s infinite alternate;
 }
 
 #Icones a{
@@ -157,10 +157,26 @@ main{
     display: flex;
     color: black;
     font-size:larger;
+    font-weight: 700;
     text-align: center;
     align-items: center;
     text-decoration: none;
     justify-content: center;
+}
+
+@keyframes colorido{
+    0%{
+        background-position-x: 0%;
+        background-color: #AB47BC;
+    }
+    50%{
+        background-position-x: 50%;
+        background-color: #5C6BC0;
+    }
+    100%{
+        background-position-x: 100%;
+        background-color: #29B6F6;
+    }
 }
 
                                             /*           CAIXA 2           */
@@ -346,13 +362,13 @@ main{
 .tras2 a{
     width: 20%;
     height: 10%;
+    transition: 1s;
     border-top: 1px;
     color: aliceblue;
     text-align: center;
     align-items: center;
     border-radius: 20px;
     text-decoration: none;
-    transition: 1s;
 }
 
                                     /*  ATRAS ??  */
@@ -399,18 +415,22 @@ main{
 }
 
 .tras a:hover{
+    color: black;
     background: yellow;
 }
 
 .tras2 a:hover{
+    color: black;
     background: yellow;
 }
 
 .tras3 a:hover{
+    color: black;
     background: yellow;
 }
 
 .tras4 a:hover{
+    color: black;
     background: yellow;
 }
 
@@ -461,7 +481,7 @@ main{
 }
 
 .carta{
-    gap: 2rem;
+    gap: 2.2rem;
     width: 40%;
     height: 70%;
     display: grid;
