@@ -6,12 +6,12 @@
 html, body{
     width: 100%;
     height: 100%;
+    background: #FFB300;
 }
 
 main{
     width: 100%;
     height: 100%;
-    background: #FFB300;
     font-family: Poppins, Helvetica, sans-serif;
 }
 
@@ -26,6 +26,7 @@ main h1{
     height: 93.5%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
     font-size: larger;
     text-align: center;
     flex-direction: row;
@@ -33,7 +34,7 @@ main h1{
     justify-content: space-between;
 }
 
-.Projeto3, .Projeto4, .Projeto5{
+.Projeto3, .Projeto4, .Projeto5, .Projeto6{
     width: 45%;
     height: 40%;
     display: flex;
@@ -43,12 +44,12 @@ main h1{
     background-repeat: no-repeat;
     justify-content: space-between;
 }
+
 .Projeto3 a{
     width: 100%;
     height: 10%;
-    margin: auto;
     display: flex;
-    color:white;
+    color:black;
     margin-top: 230px;
     text-align: center;
     align-items: center;
@@ -56,10 +57,10 @@ main h1{
     text-decoration: none;
     justify-content: center;
 }
+
 .Projeto4 a{
     width: 100%;
     height: 10%;
-    margin: auto;
     display: flex;
     color:black;
     margin-top: 230px;
@@ -69,14 +70,28 @@ main h1{
     text-decoration: none;
     justify-content: center;
 }
+
 .Projeto5 a{
-    width: 110%;
+    width: 100%;
     height: 10%;
-    margin: auto;
+    display: flex;
+    color:black;
+    text-align: center;
+    margin-top: 230px;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.Projeto6 a{
+    width: 100%;
+    height: 10%;
     display: flex;
     color:black;
     margin-top: 230px;
     text-align: center;
+    margin-left: 100px;
     align-items: center;
     border-radius: 15px;
     text-decoration: none;
@@ -90,6 +105,11 @@ main h1{
     background-image: url('Imagens/Cronometro.png');
 }
 .Projeto5{
-    margin-top: 20px;
+    margin-top: 50px;
     background-image: url('Imagens/Calculadora_IMC.png');
+}
+
+.Projeto6{
+    margin-top: 50px;
+    background-image: url('Imagens/Robo_Tela.png');
 }
